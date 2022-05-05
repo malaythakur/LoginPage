@@ -1,33 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
+body{
+    background-color: #108ffe;
+}
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: Verdana, Geneva, Tahoma, sans-serif; 
+   font-family: 'Poppins','sans-serif'; 
+   
 }
+
 
 section{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(-30 deg, #03a9f4 0%, #3a78b7 50%, #262626 50%, #607d8b 100%);
+    background: linear-gradient(-30 deg, #070d10 0%, #000000 50%, #0c0505 50%, #010608 100%);
     /*filter: hue-rotate(120deg);*/
-    animation: animate 10s linear infinite;
+    animation: animate 20s linear infinite;
 
 }
+
 @keyframes animate
 {
     0%
     {
         filter: hue-rotate(0deg);
     } 
-    100%
+    50%
     {
         filter: hue-rotate(360deg);
     } 
+
 }
+
 .box {
     position: relative;
     padding: 50px;
@@ -36,24 +42,24 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255,255,255,0.1);
+    background: rgba(84, 244, 10, 0.981);
     border-radius: 6px;
-    box-shadow: 0 5px 35px rgba(255,255,255,0.2);
+    box-shadow: 0 5px 35px rgb(255, 0, 0);
 
-}
+} 
 .box::after{
     content: '';
     position: absolute;
     top: 5px;
-    left: 5px;
+    Left: 5px;
     right: 5px;
     bottom: 5px;
     border-radius: 5px;
     pointer-events: none;
-    background: linear-gradient(to bottom,rgba(255,255,255,0.3) 0%,
-    rgba(255,255,255,0.1) 15%,transparent 50%, transparent 85%,rgba
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.3) 0%,
+    rgba(103, 4, 215, 0.1) 15%,transparent 50%, transparent 85%,rgba
     (255,255,255,0.3) 100%);
-}
+} 
 .box .form
 {
     position: relative;
@@ -61,7 +67,7 @@ section{
 }
 .box .form h2
 {
-    color: #fff;
+    color: rgb(238, 11, 11);
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 30px;
@@ -76,27 +82,42 @@ section{
 {
     width:100%;
     outline: none;
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(211, 6, 242, 0.701);
     background: transparent;
     padding : 8px 10px;
     padding-left: 35px;
     border-radius : 6px;
-    color: #fff;
+    color: rgb(236, 71, 0);
     font-size: 16px;
     font-weight: 300;
-    box-shadow: inset 0 0 25px rgba(255,255,255,0.2);
+    box-shadow: inset 0 0 25px rgba(0,0,0,0.2); 
 }
+
 
 .box .form .inputBx img
 {
+    
     position: absolute;
-    top: 8px;
+    top: 12px;
     left: 10px;
     transform: scale(0.7);
-    filter:invert(1);
+    filter: inver(1);
+    width : 16px;
+    height : 16px;
+    
+}
 
+.remember
+{
+    position: relative;
+    display: inline-block;
+    color: rgb(6, 140, 118);
+    font-weight: 300;
+    margin-bottom: 10px;
+    cursor: pointer;
 
 }
+
 .box .form .inputBx input::placeholder
 {
     color: #fff;
@@ -115,24 +136,7 @@ section{
 
 }
 
-.box .form .inputBx img
-{
-    position: absolute;
-    top: 8px;
-    left: 10px;
-    transform: scale(0.7);
-    filter: inver(1);
-}
-.remember
-{
-    position: relative;
-    display: inline-block;
-    color: #fff;
-    font-weight: 300;
-    margin-bottom: 10px;
-    cursor: pointer;
 
-}
 .box .form p
 {
     color: #fff;
